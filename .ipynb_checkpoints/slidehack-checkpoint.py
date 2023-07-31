@@ -25,6 +25,10 @@ slidepath = r'Z:\3Dhistech\POROKERATOSIS VRRUCOUS DP19-13251.mrxs'
         
 slide = openslide.OpenSlide(slidepath)
 
+#print(slide.dimensions)
+#print(slide.level_count)
+#print(slide.level_dimensions)
+#pprint(dict(slide.properties))
 slidedict = dict(slide.properties)
 
 regionx:float = 0.0
